@@ -1,0 +1,23 @@
+Package: StanNet
+Title: StanNet: A Variant of BUGSnet Using Stan
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Augustine",
+           family = "Wigle",
+           role = c("aut", "cre"),
+           email = "amhwigle@uwaterloo.ca")
+    person(given = "Marcus",
+           family = "Di Renzo",
+           role = c("aut", "cre"),
+           email = "mldirenz@uwaterloo.ca")
+Description: StanNet is a variant of BUGSnet (Bayesian inference Using Gibbs Sampling to conduct NETwork meta-analysis) package which uses Stan in place of JAGS to conduct Markov Chain Monte Carlo through user-specified inputs. The package supports additional data exploration, simulation, and diagnostics not originally present in BUGSnet. Users of this package must first download Stan on their computer prior to use.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Depends: ggplot2, meta, dplyr, tidyr, forcats
+Imports: stats, scales, BUGSnet, rlang, purrr, tibble, plyr, utils, graphics, magrittr, igraph, gridExtra, Rdpack, stringr, grDevices, RColorBrewer, rstan
+RdMacros: Rdpack
+Suggests: 
+    testthat
